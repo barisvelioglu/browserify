@@ -5,6 +5,7 @@
   "main": "./www/lib/main.js",
   "browser": {
     "lodash": "./www/assets/js/lodash.min.js",
+    "slick" : "./www/assets/js/slick.min.js",
     "router": "./www/assets/js/router.js",
     "socketio": "./www/assets/js/socket.io.js",
     "bootstrap": "./www/assets/plugins/bootstrap-3.3.7-dist/js/bootstrap.js",
@@ -15,7 +16,9 @@
     "helpers" : "./www/assets/js/helpers.js",
     "i18nManager": "./www/lib/i18n-manager.js",
     "socketManager" : "./www/lib/socket-manager.js",
-    "routeManager" : "./www/lib/route-manager.js"
+    "routeManager" : "./www/lib/route-manager.js",
+    "BaseView" : "./www/views/common/base-view.js",
+    "HomeView" : "./www/views/home/home-view.js"
   },
   "browserify-shim": {
     "lodash": "_",

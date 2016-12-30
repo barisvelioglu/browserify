@@ -1,56 +1,101 @@
+require('slick');
 var BaseView = require('../common/base-view.js');
 var template = require('../../templates/home/home-tpl.hbs');
 
-class HomeView extends BaseView {
+var homeView = function(value){
+	
+	this._renderHTML = function() {
+		this.$view.html(template(value));
+	    return this.$view;
+	};
 
-	constructor(model){
-		super(null, model);
-	}
-
-	_renderHTML(){
-		this.$view.html(template(this.model));
-		return this.$view;
-	}
-
-	_init(){
-
-		var that = this;
-
-		this.$view.on("click", "#langs li", _changeLanguage);
+	this._init = function(){		
 		this.$view.on("click", "#scenes li", _callScene);
+		this.$view.on("click", "#alarms li", _callAlarm);
 
-		function _changeLanguage(){
+		_runSlider();
+	};
 
-			var selectedLang = $(this).data("lang");
-			
-			if(selectedLang){
+	this._destroy = function(){
+		socket.off("get:notification", _getNotification);
+	};
 
-				i18n.setLocale(selectedLang);
+	BaseView.call(this);
 
-				_.forEach(that.model.languages, function(l){
+	function _getNotification(message){
+		var $notification = $("#notification");
 
-					if(l.code === selectedLang){
-						l.active = true;
-					}else{
-						l.active = false;
-					}
-				});
-
-				that._renderHTML();		
-			}
-		}
-
-		function _callScene(){
-
-			console.log("Call Scene : " + $(this).data("id"));
-		}
-
+		$notification.fadeOut(1000, function(){
+			$notification.fadeIn(1000);		
+			$notification.html(message);
+		});
 	}
 
-	_destroy(){ 
-
+	function _callScene(){
+		var sceneId = $(this).data("id");
+		socket.emit("call:scene", sceneId);
 	}
 
-}
+	function _callAlarm(){
+		var alarmId = $(this).data("id");
+		socket.emit("call:alarm", alarmId)
+	}
 
-module.exports = HomeView;
+	function _runSlider(){
+
+		var $contentSlider = $('.responsive.mainpage-content-slider');
+
+		var sliderParam = {
+			dots: true,
+			infinite: true,
+			speed: 10,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			rows: 2,
+			arrows: true,
+			responsive: [
+			  {
+			    breakpoint: 1024,
+			    settings: {
+			      slidesToShow: 3,
+			      slidesToScroll: 3,
+			      infinite: true,
+			      dots: true
+			    }
+			  },
+			  {
+			    breakpoint: 600,
+			    settings: {
+			      slidesToShow: 2,
+			      slidesToScroll: 2
+			    }
+			  },
+			  {
+			    breakpoint: 480,
+			    settings: {
+			      rows: 4,
+			      slidesToShow: 2,
+			      slidesToScroll: 2
+			    }
+			  },
+			  {
+			    breakpoint: 360,
+			    settings: {
+			      rows: 3,
+			      slidesToShow: 2,
+			      slidesToScroll: 2
+			    }
+			  }
+			]
+		};
+
+		$contentSlider.slick(sliderParam);
+	
+	}
+
+};
+
+homeView.prototype = BaseView.prototype;
+homeView.prototype.constructor = homeView;
+
+module.exports = homeView;
