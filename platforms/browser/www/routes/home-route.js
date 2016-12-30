@@ -4,7 +4,7 @@ var $ = require("jquery"),
 
 r.addRoute('', function() {
 	var homeView = new HomeView();
-    $('body').html(homeView.render());
+    $('#app').html(homeView.render());
 });
 
 r.addRoute('traffic', function() {
