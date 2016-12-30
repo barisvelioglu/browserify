@@ -1,0 +1,8 @@
+{
+  "undef": true,
+  "unused": true,
+  "predef": ["console"],
+  "esversion": 6,
+  "maxstatements" : 100,
+  "maxdepth" : 2
+}

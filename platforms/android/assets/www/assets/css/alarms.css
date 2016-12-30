@@ -1,0 +1,18 @@
+.alarm-content-area h1{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.alarm-content-area h1,
+.alarm-content-area h3{
+    margin:5px 0;
+    display: inline-block;
+}
+.alarm-btn-title{
+    font-size: 35px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+    .scrollpane{
+        max-height: 270px;
+    }
+}

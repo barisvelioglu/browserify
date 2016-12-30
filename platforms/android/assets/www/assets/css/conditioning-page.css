@@ -1,0 +1,268 @@
+.up-icon{
+      font-size: 2.4em;
+      width: 100%;
+      padding: 0;
+      height: 40px;
+}
+.fan-settings .middle-text{
+      font-size: 1.5em;
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      line-height: inherit;
+}
+.middle-icon{
+      font-size: 1.7em;
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      padding: 5px 0;
+}
+.down-icon{
+      font-size: 1.5em;
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      line-height: 2.5;
+      padding: 0;
+}
+.smart-home-body{
+      margin: 110px 0 0 0;
+}
+.inline-table{
+      display: inline-table;
+}
+
+/*fan area*/
+.fan-settings h1,h2,h3,h4{
+      /*height: 65px;*/
+      padding: 0 20px;
+}
+.fan-settings ul li{
+      list-style: none;
+}
+/*.fan-settings ul li:first-child a {
+    font-size: 2em;
+    line-height: 2.5;
+    width:100%;
+}*/
+
+
+.mod-selector-left{
+      padding-left:0;
+}
+.mod-selector .panel-heading,
+.mod-selector .panel-body {
+      margin-right: 15px;
+}
+.mod-selector-right{
+      padding-right:0;
+}
+.mod-selector .panel-heading,
+.mod-selector .panel-body {
+      margin-left: 15px;
+}
+
+/*//fan area*/
+/*degree pane*/
+.degree-pane{
+      height: 150px;
+      margin: 0 0 15px 0;
+}
+.degree-pane-content{
+      /*padding: 3em 0 !important;*/
+      height: 110px;
+}
+.degree-pane-content i{
+      color:#ffffff;
+}
+/*//degree pane*/
+/*target scroll*/
+.target-scroll .swipe-wrap > div {
+      width: 80px;
+      color: #e8e8e8;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 10px 0;
+}
+
+.target-scroll .target-scroll-wheel {
+      clear: both;
+      padding: 0;
+      /* background: linear-gradient(rgba(0,0,0,0.3), #000000); */
+      /* box-shadow: -1px 0px 35px 20px rgb(0, 0, 0); */
+      box-shadow: /* Underglow */ 13px 0px 20px rgba(0, 0, 0, 0.94), 
+      /* Outerglow */ -13px 0px 20px rgb(0, 0, 0), 
+      /* Innerglow */ -10px 24px 32px rgba(0, 0, 0, 0.24) inset, 0px 0px 30px rgb(0, 0, 0);
+      overflow: hidden;
+      height: 100px;
+      width: 100px;
+      position: relative;
+      text-align: center;
+      background: transparent;
+      box-shadow: none;
+}
+.target-scroll .target-scroll-content {
+      width: 190px;
+      height: 100px;
+      overflow: auto;
+      float: left;
+      /* border-bottom: 3px solid black; */
+      /* border-top: 3px solid black; */
+}
+.target-scroll .target-scroll-content::scrollbar-corner,
+.target-scroll .target-scroll-content::-webkit-scrollbar{
+      opacity: 0;
+      background: transparent;
+}
+
+
+.target-scroll .target-scroll-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+}
+.target-scroll .target-scroll-content ul li:first-child,.target-scroll .target-scroll-content ul li:last-child {
+    display: none;
+}
+.target-scroll .target-scroll-content ul li:nth-child(2) {
+    height: 20px;
+}
+.target-scroll .target-scroll-content li {
+      text-align: center;
+      width: 100px;
+      height: 48px;
+      color: #e0e0e0;
+      cursor: default;
+      font-size: 30px;
+      margin: 2px 0;
+}
+.target-scroll .fader {
+      color: #ccc !important;
+      font-size: 30px;
+      line-height: 0px;
+      opacity: .5;
+      -webkit-transition: opacity 1s linear;
+      -o-transition: opacity 1s linear;
+      transition: opacity 1s linear;
+      /* -webkit-transform: rotateX(-45deg); */
+      /* transform: rotateX(-45deg); */
+      padding: 20px 0 0 0;
+}
+.target-scroll .fade {
+      font-size: 30px;
+      line-height: 50px;
+      color: #7e828a !important;
+      opacity: 1;
+      -webkit-transition: opacity 0.5s linear;
+      -o-transition: opacity 0.5s linear;
+      /* transition: opacity 0.5s linear; */
+      /* -webkit-transform: rotateX(-35deg); */
+      /* transform: rotateX(-35deg); */
+}
+.target-scroll .active {
+      margin: -5px 0px;
+      padding: 25px 0 0 0;
+      /* background-color: #000; */
+      color: #fff;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      font-size: 34px;
+      text-shadow: 0 0 0.1em white;
+}
+
+/*//target scroll*/
+/*tab menu*/
+.condition-tab-area{
+      
+}
+.condition-tab-menu ul li {
+      height: 50px;
+      padding: 0;
+}
+.condition-tab-menu ul li a{
+      font-size: 14px !important;
+      height: 100%;
+      
+}
+/*//tab menu*/
+/*button on - off*/
+.btn-on-off{
+      background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*//button on - off*/
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) { 
+   
+ 
+}
+
+@media only screen and (max-device-width: 480px) {
+      
+      .condition-menu .btn-ghost{
+            width: 100%;
+            height: auto;
+      }
+      .condition-menu .div{
+            padding: 0;
+      }
+      .condition-menu div[class*="col-"] {
+            padding: 0 5px;
+      }
+      .fan-settings .middle-text,.up-icon,.down-icon,.middle-icon{
+            height: 50px;
+      }
+      .target-scroll .target-scroll-content li,
+      .target-scroll .target-scroll-content,
+      .target-scroll .target-scroll-wheel{
+            width: 90px;
+      }
+      .target-scroll .target-scroll-content li{
+            height: 40px;
+            margin: 5px 0;
+            padding: 20px 0 0 0;
+      }
+      .target-scroll .active{
+            font-size: 2em;
+      }
+      .target-scroll .target-scroll-content{
+            height: 55px;
+      }
+      .degree-pane{
+            height: 100px;
+      }
+      .degree-pane-content h1{
+            margin: 0;
+            line-height: 1.5;
+      }
+      .btn-on-off{
+            width: auto;
+            height: auto;
+            padding: 10px;
+            display: table-row;
+      }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 360px) {
+      .fan-settings .middle-text{
+            font-size: 1em;
+            height: 35px;
+            width: 100%;
+            line-height: 2.5em;
+      }
+      .up-icon, .down-icon, .middle-icon {
+            height: 35px;
+      }
+      .up-icon{
+            font-size: 2em;
+      }
+      .middle-icon{
+            font-size: 1.5em;
+      }
+}

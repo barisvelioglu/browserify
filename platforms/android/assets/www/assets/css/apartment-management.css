@@ -1,0 +1,54 @@
+.apartment-management-navbar ul li{
+    width: 25%;
+}
+.suggestion-add-content{
+    display: none;
+}
+.mobile-toggle-position-control .form-group button{
+    margin-left: 15px;
+}
+@media screen and (max-width: 600px){
+    .apartment-management-content-area table td:before {
+        padding: 3px 0;
+    }
+    .apartment-management-content-area .info-table h4{
+        text-align: left;
+        padding-left: 90px;
+    }
+    .apartment-management-content-area table tr{
+        border: 0;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 480px){
+    .apartment-management-container{
+        overflow-y: auto;
+        max-height: 500px;
+        display: inline-block;
+    }
+    .apartment-management-content-area .info-table tr td h4 {
+        border-bottom: 1px solid #585858;
+        padding-bottom: 10px;
+    }
+    .apartment-management-navbar ul li{
+        width: 30%;
+    }
+    .mobile-toggle-position-control{
+        height: 580px;
+        overflow-y: auto;
+        display: list-item;
+    }
+}
+@media screen and (max-width: 320px){
+    .apartment-management-container{
+        max-height: 400px;
+    }
+    .mobile-toggle-position-control{
+        height: 515px;
+        overflow-y: auto;
+        display: list-item;
+    }
+    .mobile-toggle-position-control .info-table{
+        height: 340px;
+        margin: 20px 0 10px 0;
+    }
+}

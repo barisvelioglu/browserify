@@ -1,0 +1,74 @@
+{
+  "name": "shim-jquery",
+  "version": "0.0.0",
+  "description": "Example of using browserify-shim to shim jquery for use with browserify",
+  "main": "./www/lib/main.js",
+  "browser": {
+    "lodash": "./www/assets/js/lodash.min.js",
+    "router": "./www/assets/js/router.js",
+    "socketio": "./www/assets/js/socket.io.js",
+    "bootstrap": "./www/assets/plugins/bootstrap-3.3.7-dist/js/bootstrap.js",
+    "jqueryui": "./www/assets/plugins/jquery-ui-1.12.1/jquery-ui.js",
+    "jquery-extensions": "./www/assets/js/extensions/jquery-extensions.js",
+    "handlebars-extensions": "./www/assets/js/extensions/handlebars-extensions.js",
+    "i18n": "./www/assets/js/i18n.js",
+    "helpers" : "./www/assets/js/helpers.js",
+    "i18nManager": "./www/lib/i18n-manager.js",
+    "socketManager" : "./www/lib/socket-manager.js",
+    "routeManager" : "./www/lib/route-manager.js"
+  },
+  "browserify-shim": {
+    "lodash": "_",
+    "router": {
+      "exports": "router",
+      "depends": [
+        "jquery:$"
+      ]
+    },
+    "bootstrap": {
+      "exports": "bootstrap",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "i18n": {
+      "exports": "I18n",
+      "depends": [
+        "jquery:$"
+      ]
+    },
+    "jqueryui": {
+      "exports": "jqueryui",
+      "depends": [
+        "jquery:JQuery"
+      ]
+    },
+    "socketio": "io"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "hbsfy"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -d ./www/lib/main.js > ./www/bundle.js"
+  },
+  "repository": "",
+  "author": "Barış Velioğlu",
+  "license": "BSD",
+  "dependencies": {
+    "handlebars": "^4.0.6",
+    "jquery": "^3.1.1",
+    "request": "~2.12.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "hbsfy": "^2.7.0",
+    "jshint": "^2.9.4"
+  }
+}

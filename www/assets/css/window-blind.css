@@ -1,0 +1,303 @@
+/*subpages global top navbars*/
+.subpages-top-subnavbar .container-fluid,
+.subpages-top-navbar .container-fluid{
+    padding: 0;
+}
+.full-width{
+    width: 100%;
+}
+.subpages-top-subnavbar ul[class*='col-'],
+.subpages-top-subnavbar li[class*='col-'],
+.subpages-top-navbar ul[class*='col-'],
+.subpages-top-navbar li[class*='col-']{
+		padding-left: 0;
+		padding-right: 0;
+}
+.subpages-top-subnavbar ul,
+.subpages-top-navbar ul{
+    white-space: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+.subpages-top-navbar ul::-webkit-scrollbar
+{
+    display: none;
+}
+.subpages-top-subnavbar ul li,
+.subpages-top-navbar ul li{
+    display: inline-block;
+    float: none;
+    width: 20%;
+}
+.navbar-default.subpages-top-subnavbar .navbar-nav>li>a:hover, 
+.navbar-default.subpages-top-subnavbar .navbar-nav>li>a:focus{
+    background-color: #090909;
+}
+/*//subpages global top navbars*/
+/*subpages only top secound navbar*/
+.subpages-top-subnavbar ul li{
+    padding: 2% 3%;
+}
+
+.navbar-default.subpages-top-subnavbar .navbar-nav>.active>a, 
+.navbar-default.subpages-top-subnavbar .navbar-nav>.active>a:hover, 
+.navbar-default.subpages-top-subnavbar .navbar-nav>.active>a:focus,
+.navbar-default.subpages-top-subnavbar .navbar-nav>li>a:hover, 
+.navbar-default.subpages-top-subnavbar .navbar-nav>li>a:focus{
+    background-color: transparent !important;
+    color:#3d3d3d !important;
+}
+.subpages-top-subnavbar{
+    margin: 50px 0;
+    background: transparent;
+    border-color: transparent;
+}
+.subpages-top-subnavbar a{
+    line-height: 1;
+}
+.subpages-top-subnavbar a:active,
+.subpages-top-subnavbar a.active{
+    /*box-shadow: inset 0 3px 5px rgba(0,0,0,0.5);*/
+    box-shadow: inset 0px 5px 20px rgba(0,0,0,0.5);
+}    
+/*//subpages only top secound navbar*/
+
+/*range slider*/
+.curtain-icon{
+    font-size: 4em;
+    color: #161616;
+    height: 60px;
+    /*text-shadow: 0px -2px 9px #ffffff,0px -2px 0px #d4d4d4,0px 4px 6px rgb(0, 0, 0);*/
+}
+
+.bulb-slider label{
+    position: absolute;
+    z-index: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.46);
+    width: 90%;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto-Thin';
+}
+.curtain-icon.close{
+    color: #acacac;
+}
+.curtain-icon.open{
+    text-shadow: 0px 7px 15px #ffd100,-4px 2px 27px #ff8d00,1px -4px 50px #ff8d00,0px -10px 19px rgb(255, 188, 0);
+    color: #ffffaa;
+}
+.curtain-range{
+    height: 70px;
+    margin: 10px;
+}
+.noUi-connect{
+    background: linear-gradient(to right,  #fff7bd 45%, #f1da36 100%) no-repeat, linear-gradient(#111111, #262626);/*slider color*/
+    margin: 4px;
+    z-index: -1;
+}
+.noUi-horizontal{
+    border-color: black;
+}
+.noUi-horizontal,
+.noUi-horizontal .noUi-handle{
+    height: 50px;
+    top: 0;
+}
+.noUi-horizontal .noUi-handle{
+    opacity: 0;
+}
+.noUi-horizontal, .noUi-horizontal .noUi-handle{
+    background: rgba(0, 0, 0, 0.5);
+}
+.sliderInfo{
+  position: absolute;
+  z-index: 10;
+  font-size:1.5em;
+  left:5px;
+  top:23px;
+  color:#FFF;
+  text-shadow: 1px 1px #000;
+}
+
+.noUi-base:hover, .noUi-handle:hover{
+  cursor: default;
+}
+/*//range slider*/
+/*bulb toggle*/
+/*
+look at the weird glitch on the 6th button. something to do with color vs background-color. or did i fuck up?
+*/
+.slide-icon{
+    font-size: .7em;
+    padding: 20px 0 0 0;
+}
+.bulb-toggle,
+.bulb-toggle:before,
+.bulb-toggle:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bulb-toggle .button-wrap {
+    width: 55px;
+    margin: -75px 0 0 -8px;
+    cursor: pointer;
+}
+.bulb-toggle .button-bg {
+    width: 55px;
+    height: 50px;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.bulb-toggle .button-active .button-switch {
+    left: 80px;
+}
+.bulb-toggle .button-on,
+.bulb-toggle .button-off {
+    position: absolute;
+    transition: all 0.2s ease;
+    font-size: 1em;
+}
+.bulb-toggle .button-on {
+    margin:-1px 5px 0 43px;
+    /*color: rgba(0, 0, 0, 0.5);*/
+    color: rgba(0, 0, 0, 0);
+    text-shadow: none;
+    border: 4px solid #161616;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.bulb-toggle .button-off {
+    margin: 0px 5px 0 0px;
+    /*color: rgba(221,34,34,0.5);*/
+    text-shadow: none;
+}
+.bulb-toggle .button-active .button-off {
+    color: rgba(0, 0, 0, 0);
+    border: 4px solid #161616;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.bulb-toggle .button-active .button-on {
+    /*color: rgba(34,221,34,0.7);*/
+    color:#000000;
+    border:0;
+    margin:1px 5px 0 43px;
+}
+.bulb-toggle .button-active .button-on:after{
+    content: "•";
+    font-size: .5em;
+    color: #ffffaa;
+    position: absolute;
+    margin: 3px 0 0 -3px;
+}
+.btn-ghost{
+    border-color: black;
+}
+/*/bulb toggle*/
+
+@media screen and (max-width: 1024px) {
+    .btn-ghost{
+        padding: 18px 15px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+	
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) { 
+   .subpages-top-navbar .nav>li>a{
+        font-size: 12px;
+        line-height: 4em;
+        padding: 0;
+    }
+    .visible{
+        display: inherit !important;
+    }
+    .shade{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .btn-ghost{
+        border-radius:5%;
+    }
+    .btn-ghost i{
+        padding: 0 0px;
+        font-size: 2em;
+        line-height: normal;
+    }
+ 
+}
+
+@media only screen and (max-device-width: 480px) {
+   
+    .child-area{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .child-area .left{
+        float: none;
+    }
+	.ghost-panel{
+        max-height: 450px;
+    }
+    .subpages-top-subnavbar ul{
+        margin: 0;
+    }
+    .btn-ghost{
+        height: 60px;
+        width: 60px;
+        padding: 0px;
+        border-radius:5%;
+    }
+    .btn-ghost i{
+        padding: 0 0px;
+        font-size: 2.5em;
+        line-height: normal;
+    }
+    .bulb-slider label{
+        text-align: center;
+        font-size: 15px;
+        line-height: 3.2;
+    }
+    .curtain-range {
+        height: 60px;
+        margin: 5px;
+    }
+    .subpages-top-navbar .navbar-nav{
+        margin: 0;
+        height: 50px;
+    }
+    .subpages-top-navbar ul{
+        height: 50px;
+    }
+    .subpages-top-navbar ul li a{
+        vertical-align: middle;
+    }
+    .navbar-default.subpages-top-navbar .navbar-nav>li>a:hover, 
+    .navbar-default.subpages-top-navbar .navbar-nav>li>a:focus,
+    .navbar-default.subpages-top-navbar .navbar-nav>.active>a, 
+    .navbar-default.subpages-top-navbar .navbar-nav>.active>a:hover, 
+    .navbar-default.subpages-top-navbar .navbar-nav>.active>a:focus{
+        height: 50px;
+    }
+    /*bulb icon*/
+    .slide-icon {
+        padding: 17px 0 0 0;
+        line-height: 1em;
+    }
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .ghost-panel{
+        margin: 125px 0 80px 0;
+    }
+}
+
+

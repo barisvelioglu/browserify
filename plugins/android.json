@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.eaesmarthome.touch.panel"
+        },
+        "cordova-plugin-nativestorage": {
+            "PACKAGE_NAME": "com.eaesmarthome.touch.panel"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.eaesmarthome.touch.panel"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "com.eaesmarthome.touch.panel"
+        }
+    },
+    "dependent_plugins": {}
+}

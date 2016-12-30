@@ -1,0 +1,75 @@
+.importpage-body{
+      background: #c9d6df none;
+}
+.install-message{
+      padding: 20px 0;
+}
+.install-button-container button{
+      margin: 0 10px;
+}
+.install-buttons{
+      text-align: center;
+      display: inline-block;
+      padding: 20px 0;
+      border-top:1px solid black;
+}
+/*project-select*/
+.select-project-header{
+      position: absolute;
+      height: 100px;
+}
+.select-project-header img{
+      width: 80px;
+      height: 80px;
+      padding: 10px;
+}
+.select-project-top-navbar{
+      margin: 80px 0 20px 0 ;
+      position: absolute;
+      z-index: 3;
+}
+
+.install-pages-content-sliders{
+      margin: 130px auto;
+}
+.install-pages-content-sliders div a{
+      width: 100% !important;
+      height: 60px;
+}
+.install-pages-content-sliders div{
+      width: 90%;
+      right: 0;
+      left: 0;
+      margin: 5px auto;
+}
+.install-pages-content-sliders .slick-list.draggable{
+      margin: 0 0 0 50px;
+}
+.importpage-body  .btn-default{
+      background-color:#1a2a3c ;
+}
+
+.importpage-body .btn-default:active:hover,.importpage-body .btn-default:focus,.importpage-body .btn-default.focus{
+      background-color: #012C5B ;
+      border-color: #0a223c ;
+}
+.importpage-body .btn-default:active,.importpage-body .btn-default.active,.importpage-body .open>.dropdown-toggle.btn-default{
+      background-color: #012C5B ;
+      border-color: #07315f ;
+}
+.home-details-content form div{
+      padding: 5px 0;
+}
+.home-details-content form h2{
+      padding: 10px 0;
+}
+.home-details-content form{
+      margin: 50px 0 0 0;
+}
+/*//project-select*/
+@media only screen and (max-device-width: 480px) {	
+/*content slider*/
+
+
+/*//content slider*/ 
+}
