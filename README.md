@@ -2,24 +2,20 @@
 
 1 - npm install gulp -g
 
-2 - npm install 
+2 - npm install
 
 3 - cordova run browser
 
 4 - cd gulp
 
-    gulp jshint 
-    
+    gulp jshint
+
     komutu ile javascriptler testten geçirilir
 
+# YAPILACAKLAR
 
-# CordovaMobilAppTest
-
-1 - database ve valueları(uçucu) ayrı ayrı tutalım
-
-2 - database'i her açıldığında direkt alalım mı yoksa versiyon kontrolü mu yapalım
-
-3 - websockets mevzusunu bir düşüneyim QOS
-
-4 - JSlint entegrasyonu
-
+1 - browserify watch ekle
+2 - babel entegrasyonu yapalım
+3 - dil seçimi dbye at
+4 - folder yapısını gözden geçir
+5 - notifications

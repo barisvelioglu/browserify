@@ -5,7 +5,7 @@
   "main": "./www/lib/main.js",
   "browser": {
     "lodash": "./www/assets/js/lodash.min.js",
-    "slick" : "./www/assets/js/slick.min.js",
+    "slick": "./www/assets/js/slick.min.js",
     "router": "./www/assets/js/router.js",
     "socketio": "./www/assets/js/socket.io.js",
     "bootstrap": "./www/assets/plugins/bootstrap-3.3.7-dist/js/bootstrap.js",
@@ -13,14 +13,18 @@
     "jquery-extensions": "./www/assets/js/extensions/jquery-extensions.js",
     "handlebars-extensions": "./www/assets/js/extensions/handlebars-extensions.js",
     "i18n": "./www/assets/js/i18n.js",
-    "helpers" : "./www/assets/js/helpers.js",
+    "helpers": "./www/assets/js/helpers.js",
     "i18nManager": "./www/lib/i18n-manager.js",
-    "socketManager" : "./www/lib/socket-manager.js",
-    "routeManager" : "./www/lib/route-manager.js",
-    "BaseView" : "./www/views/common/base-view.js",
-    "HomeView" : "./www/views/home/home-view.js"
+    "socketManager": "./www/lib/socket-manager.js",
+    "routeManager": "./www/lib/route-manager.js",
+    "homeService": "./www/services/home-service.js",
+    "BaseView": "./www/components/common/base-view.js",
+    "HomeView": "./www/components/home/home-view.js",
+    "Promise": "./www/assets/bower_components/es6-promise/es6-promise.js"
   },
   "browserify-shim": {
+    "event-emitter": "./node_modules/event-emitter/index.js",
+    "localforage" : "./node_modules/localforage/dist/localforage.js",
     "lodash": "_",
     "router": {
       "exports": "router",
@@ -62,8 +66,10 @@
   "author": "Barış Velioğlu",
   "license": "BSD",
   "dependencies": {
+    "event-emitter": "^0.3.4",
     "handlebars": "^4.0.6",
     "jquery": "^3.1.1",
+    "localforage": "^1.4.3",
     "request": "~2.12.0"
   },
   "devDependencies": {

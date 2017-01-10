@@ -1,0 +1,21 @@
+{
+  "name": "assets",
+  "homepage": "https://github.com/barisvelioglu/browserify",
+  "authors": [
+    "barisvelioglu <iletisim@barisvelioglu.net>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "es6-promise": "^4.0.5",
+    "bootstrap": "^3.3.7"
+  }
+}

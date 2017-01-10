@@ -1,10 +1,11 @@
 var $ = require("jquery"),
 	r = require('router'),
-	HomeView = require('../views/home/home-view');
+	HomeComponent = require('../components/home/home-component');
 
 r.addRoute('', function() {
-	var homeView = new HomeView();
-    $('#app').html(homeView.render());
+		var homeComponent = new HomeComponent();
+		$('#app').html(homeComponent.render());
+
 });
 
 r.addRoute('traffic', function() {
@@ -15,7 +16,7 @@ r.addRoute('weather', function() {
     $('body').html("weatherView");
 });
 
-r.addRoute('finance', function() {        
+r.addRoute('finance', function() {
     $('body').html("financeView");
 });
 

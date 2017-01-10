@@ -46,20 +46,9 @@
     <div class="slider responsive mainpage-content-slider">
       <div class="scene-btn circle"><a class="btn btn-default btn-lg btn-block"> <i class="icon-security-badge block"></i><span>Evdeyim</span></a></div>
       <div class="scene-btn circle circle2"><a class="btn btn-default btn-lg btn-block"><i class="icon-black-shield-shape2 block"></i><span>Evde Yokum </span><span class="alarm-info active">Aktif</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"><i class="icon-movie-clapper-tool-to-number-filming-scenes block"></i><span>Oturma Odası</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block">
-          <div class="block"><i class="icon-movie-clapper-tool-to-number-filming-scenes block"></i></div><span>Salon</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"><i class="icon-movie-clapper-tool-to-number-filming-scenes block"></i><span>Çocuk Odası</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"><i class="icon-movie-clapper-tool-to-number-filming-scenes block"></i><span>Yatak Odası</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <i class="icon-movie-clapper-tool-to-number-filming-scenes block"></i><span>Oda 2</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <i class="icon-movie-clapper-tool-to-number-filming-scenes block"></i><span>Oda 3</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <span>Oda 4</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <span>Oda 5</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <span>Oda 6</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <span>Oda 7</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <span>Oda 8</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <span>Oda 9</span></a></div>
-      <div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"> <span>Oda 10</span></a></div>
+			 {{#each this.scenes}}
+			 	<div class="scene-btn btn-shadow"><a class="btn btn-default btn-lg btn-block"><i class="icon-movie-clapper-tool-to-number-filming-scenes block"></i><span>{{name}}</span></a></div>
+  		 {{/each}}
     </div>
   </div>
 </div>
